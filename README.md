@@ -5,7 +5,7 @@ Population / demographics calculator.
 
 ## Live demo
 
-Available at [http://ile.github.io/population-calculator](http://ile.github.io/population-calculator)
+Available at [http://zencrust.github.io/population-calculator](http://zencrust.github.io/population-calculator)
 
 ## What does it look like
 

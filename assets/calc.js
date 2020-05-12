@@ -8,14 +8,14 @@
         growth_rate = 0,
         vars_query = uri.get(),
         vars = {
-            human_age: 80,
+            human_age: 85,
         	title: '',
-            birth_rate: 4,
-            birth_age: 21,
+            birth_rate: 1.5,
+            birth_age: 25,
             immigration: 1000,
-            start_pop: 60000,
+            start_pop: 1000000000,
             timespan: 200,
-            start_year: 2013,
+            start_year: 2020,
             pyramid: 'flat'
         }
 
@@ -138,6 +138,7 @@
 
             for (i = 1; i < vars.human_age - 1; i++) {
                 data[n]['population'][i] += immigration_yearly[i];
+                data[n]['population'][i] = Math.max(0, data[n]['population'][i])
             }
         }
 
